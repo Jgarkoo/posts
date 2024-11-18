@@ -1,0 +1,31 @@
+{
+  "logIn": [
+    {
+      "id": "5982",
+      "user": "saba",
+      "password": "saba1234"
+    },
+    {
+      "id": "f595",
+      "user": "qweqe",
+      "password": "asdqwerfgtyh"
+    }
+  ],
+  "posts": [
+    {
+      "id": "23e5",
+      "title": "rrrrrrrrrr",
+      "body": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "id": "23d1",
+      "title": "rrrrrrrrrrrrrrrrrr",
+      "body": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "id": "9e49",
+      "title": "asdasdasd",
+      "body": "akjkljlkjlkjlkjlkjlkjllkkkkkllklk"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<div class="container" [formGroup]="addPostsForm">
+    <header>
+        <h1>
+          Add Posts
+        </h1>
+    </header>
+    <div class="boddy">
+        <div class="back-home-page">
+            <button [routerLink]="['/home']">  
+                &#8249; 
+            </button>
+        </div>
+        <div class="add-post">
+            <ng-template #loginContent>
+                <h1>Title</h1>
+                <input type="text" id="title" formControlName="title">
+                <h1>Body</h1>
+                <input type="text" id="body" formControlName="body">
+                <button (click)="addPost()">Add Post</button>    
+            </ng-template>
+            <div *ngIf="isLoggedIn else loginContent" class="confirm">
+                <div>
+                  <p>Post Added successfully!</p>
+                  <button class="nav-hmp" (click)="navigateTohmpg()">Back to Home Page</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

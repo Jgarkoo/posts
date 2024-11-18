@@ -1,0 +1,46 @@
+<div class="container">
+    <header>
+      <h1>Edit Your Post</h1>
+    </header>
+    <div class="boddy">
+        <div class="back-home-page">
+            <button [routerLink]="['/home']">  
+                &#8249; 
+            </button>
+        </div>
+        <div class="post-list" *ngIf="postSarr">
+            <div class="post-card">
+                <div class="post-title">
+                    <h2>TITLE:</h2>
+                    <span>{{ postSarr.title }}</span>
+                </div>
+                <div class="post-description">
+                    <h2>DESCRIPTION:</h2>
+                    <span>{{ postSarr.body }}</span>
+                </div>
+                <button id="edit-btn" (click)="showEditorDiv()">Edit</button>
+            </div>   
+        </div>
+        <div class="edit-post-list" *ngIf="!showEditor" [formGroup]="editPostForm">
+            <div class="edit-post-card">
+                <ng-template #edit>
+                <div class="edit-post-title">
+                    <h2>TITLE:</h2>
+                    <input type="text" formControlName="title">
+                </div>
+                <div class="edit-post-description">
+                    <h2>DESCRIPTION:</h2>
+                    <input type="text" formControlName="body">
+                </div>
+                <button id="save-btn" (click)="savePost()">Save</button>
+            </ng-template>
+                <div *ngIf="editedPost else edit" class="edited">
+                    <div>
+                        <p>Post Updated successfully!</p>
+                        <button class="nav-hmp" (click)="navigateTohmpg()">Back to Home Page</button>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+    </div>
+</div>

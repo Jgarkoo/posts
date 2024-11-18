@@ -1,0 +1,57 @@
+.container{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    background-color: #f5f2c7;
+    .log-in-header{
+        background-color: #726969;
+        border: 1px solid rgb(192, 192, 192);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: 10px;
+        h1{
+            margin-left: 45%;
+            color: #cd8500;
+        }
+    }
+    .log-in-window{
+        margin-top: 10%;
+        margin-left: 30%;
+        width: 35%;
+        height: 320px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        input{
+            background-color: #f5f2c7;
+            width: 60%;
+            margin-left: 20%;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        label{
+            margin-left: 43%;
+            margin-bottom: 10px;
+            margin-top: 10%;
+            color: black;
+
+        }
+        button{
+            margin: 5% 40%;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(7, 7, 187);
+            color: white;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(209, 212, 250);
+                color: rgb(7, 7, 187);
+                transition: 0.3s;
+            }
+        }
+    }
+}
+

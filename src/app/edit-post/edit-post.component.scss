@@ -1,0 +1,163 @@
+.container{
+    height: 100vh;
+    background-color: #f5f2c7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    header{
+        background-color: #726969;
+        border: 1px solid rgb(192, 192, 192);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding: 10px;
+        h1{
+            margin-left: 42%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #cd8500;
+        }
+    }
+    .boddy{
+        .back-home-page{
+            button{
+                font-size: 30px;
+                margin-left: 50px;
+                margin-top: 50px;
+                padding: 3px 15px 4px 15px;
+                border-style: none;
+                border-radius: 25px;
+                background-color: rgb(205, 205, 205);
+                cursor: pointer;
+                &:hover{
+                    color: white;
+                    background-color: black;
+                    transition: 0.3s;
+                }
+            }
+        }
+        .post-list{
+            .post-card {
+                border: 1px none grey;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                background-color: white;
+                width: 50%;
+                height: 250px;
+                margin-left: 25%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                button{
+                    border-style: solid;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    margin-top: 20px;
+                    padding: 8px 12px;
+                    font-size: 12px;
+                    margin-left: 70%;
+                }
+            } 
+        }
+        .edit-post-list{
+            .edit-post-card {
+                border: 1px none grey;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                background-color: white;
+                width: 50%;
+                height: 250px;
+                margin-left: 25%;
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                input{
+                    background-color: #f5f2c7;
+                    width: 60%;
+                    margin-top: 10px;
+                    padding: 5px;
+                    border: none;
+                    border-radius: 5px;
+                }
+                button{
+                    border-style: solid;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    margin-left: 70%;
+                    padding: 8px 12px;
+                    font-size: 12px;
+                    width: 20%;
+                }
+                .edited{
+                    width: 100%;
+                    p{
+                        font-size: 20px; 
+                        font-weight: bold; 
+                        margin-top: 80px;
+                        margin-left: 35%;
+                    }
+                    button{
+                        margin: 3% 40%;
+                        padding: 5px;
+                        width: 20%;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: rgb(7, 7, 187);
+                        color: white;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: rgb(228, 230, 255);
+                            color: rgb(7, 7, 187);
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+
+
+#edit-btn{
+    color: green;
+    border-color: green;
+    background-color: white;   
+    &:hover{
+        color: white;
+        background-color: green;
+        transition: 0.3s;
+    } 
+}
+
+#save-btn{
+    color: green;
+    border-color: green;
+    background-color: white;   
+    &:hover{
+        color: white;
+        background-color: green;
+        transition: 0.3s;
+    } 
+}
+
+.post-title, .post-description {
+    width: 50%;
+    text-align: left;
+    margin-left: 25%;
+    margin-top: 35px;
+}
+
+.post-title h2, .post-description h2 {
+    font-weight: normal;
+}
+
+
+.edit-post-title, .edit-post-description {
+    width: 50%;
+    text-align: left;
+    margin-left: 25%;
+    margin-top: 35px;
+}
+
+.edit-post-title h2, .edit-post-description h2 {
+    font-weight: normal;
+}

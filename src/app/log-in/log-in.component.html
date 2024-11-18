@@ -1,0 +1,14 @@
+<div class="container" [formGroup]="LogInForm">
+    <div class="log-in-header">
+        <h1>
+            Log In
+        </h1>
+    </div>
+    <div class="log-in-window">
+        <label for="usernameInp">user name:</label>
+        <input type="text" id="usernameInp" formControlName="user">
+        <label for="passwordInp">password:</label>
+        <input type="password" id="passwordInp" formControlName="password">
+        <button (click)="logIn()" routerLink="/home">Log In</button>
+    </div>
+</div>
